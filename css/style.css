@@ -1,10 +1,6 @@
-/*
- * Author by FreeHTML5.co
- * Twitter: https://twitter.com/fh5co
- * Facebook: https://fb.com/fh5co
- * URL: https://freehtml5.co
- */
-/* Fonts */
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: 'Calisto-MT';
   src: url(../fonts/Calisto-MT.ttf); }
@@ -30,6 +26,68 @@
   @media (max-width: 1250px) {
     .site-container {
       width: 90%; } }
+.site-navigation {
+  position: absolute;
+  top: 4.6%;
+  width: 100%;
+  z-index: 2; }
+
+.site-navigation-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.site-navigation-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+.nav_bar {
+  width: 100%;      
+  position: absolute;
+  top: 4.6%;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+.navulli {
+  list-style: none;
+  display: flex;
+  margin-left: 40px;
+  align-items: center; }
+
+.navulli .links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem }
+.nav_bar li:hover{
+  color:#777}
+
+
+  .navulli .links::after{
+  content: '';
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #777;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-out;
+}
+.navulli .links:hover:after{
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+.navulli .links:hover{
+  transform: scale(1);
+  color: #777;
+  transition: 0.3s ease;
+}
 
 .universal-h2 {
   font-size: 48px;
@@ -49,16 +107,7 @@
 
 /* Universal style end */
 /* Includes */
-.site-navigation {
-  position: absolute;
-  top: 4.6%;
-  width: 100%;
-  z-index: 2; }
 
-.site-navigation-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
 
 .main-navigation {
   color: #fff;
