@@ -26,6 +26,7 @@ html {
   @media (max-width: 1250px) {
     .site-container {
       width: 90%; } }
+
 .site-navigation {
   position: absolute;
   top: 4.6%;
@@ -37,10 +38,6 @@ html {
   align-items: center;
   justify-content: space-between; }
 
-.site-navigation-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
 .nav_bar {
   width: 100%;      
   position: absolute;
@@ -110,6 +107,7 @@ html {
 
 
 .main-navigation {
+  opacity: 0;
   color: #fff;
   display: none;
   position: fixed;
@@ -121,8 +119,8 @@ html {
   opacity: 0.9; }
   .main-navigation .main-navigation__ul {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
     transform: translate(-50%, -50%);
     padding: 3%;
     border: 2px solid #fff;
@@ -146,6 +144,7 @@ html {
 
 /* Navigation burger */
 .burger-container {
+  opacity: 0;
   cursor: pointer;
   z-index: 3; }
 
@@ -902,9 +901,19 @@ html {
     .footer-bottom-inner .footer-bottom__img img:last-child {
       margin-right: 0; }
   @media (max-width: 992px) {
+    .main-navigation{
+      opacity: 100;
+    }
+    .burger-container{
+      opacity: 100;
+    }
+    .navulli {
+      opacity: 0;
+    }
     .footer-bottom-inner {
       flex-direction: column;
       align-items: center; }
       .footer-bottom-inner p {
         font-size: 14px;
         margin-bottom: 20px; } }
+

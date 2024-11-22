@@ -20,12 +20,31 @@
 	<!-- Navigation -->
 	<nav class="site-navigation">
 		<div class="site-navigation-inner site-container">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#Sobre-mi">Sobre mí</a></li>
+					<li><a href="#Proyectos">Proyectos</a></li>
+					<li><a href="#Contacto">Contacto</a></li>
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			
 			<ul class="navulli"> <!--Esta es la lista con los títulos-->
                 <li class="navulli"><a href="#" class="links">Inicio</a></li>
                 <li class="navulli"><a href="#Sobre-mi" class="links">Sobre mí</a></li>
                 <li class="navulli"><a href="#Proyectos" class="links">Proyectos</a></li>
                 <li class="navulli"><a href="#Contacto" class="links">Contacto</a></li>
             </ul>
+			<script>
+				function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+			</script>
 		</div>
 	</nav>
 	<!-- Navigation end -->
